@@ -65,3 +65,7 @@ To link the mock streams to real Firebase:
          .map((snapshot) => snapshot.docs.map((doc) => Dish.fromFirestore(doc)).toList());
    }
    ```
+git clone https://github.com/RajamuruganK07/smart-idly-kadai.git
+cd smart-idly-kadai
+flutter pub get
+flutter run -d chrome
