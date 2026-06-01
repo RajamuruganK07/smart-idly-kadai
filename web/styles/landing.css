@@ -1,0 +1,39 @@
+:root{
+  --dark-green:#0b3a2e; /* deep green */
+  --gold:#d4a84a;
+  --black:#050505;
+  --muted:#bfc9c1;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;background:linear-gradient(180deg,var(--dark-green) 0%, #04130f 60%);color:#fff}
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:48px 20px}
+.logo-wrap{display:flex;align-items:center;justify-content:center;padding:0;margin:0}
+.logo{width:320px;max-width:70vw;height:auto;display:block;filter:drop-shadow(0 20px 40px rgba(0,0,0,0.6)) drop-shadow(0 6px 14px rgba(0,0,0,0.45));border-radius:8px;}
+/* Ensure there's no background box; don't add background to the image wrapper */
+.title{margin-top:28px;font-size:38px;letter-spacing:2px;color:var(--gold);font-weight:800;text-transform:uppercase;text-shadow:0 6px 24px rgba(0,0,0,0.6)}
+.subtitle{margin:8px 0 18px;font-weight:600;color:#fff;font-size:18px;opacity:0.95}
+.description{max-width:760px;color:var(--muted);margin:8px 0 18px;font-size:16px}
+.items{color:#dfe9e0;margin:10px 0;font-weight:600}
+.status-row{display:flex;gap:12px;align-items:center;justify-content:center;margin:16px 0}
+.status-badge{padding:10px 16px;border-radius:24px;font-weight:700;box-shadow:0 6px 24px rgba(0,0,0,0.6)}
+.status-badge.open{background:linear-gradient(90deg,#2ecc71,#27ae60);color:#04220f}
+.hours{color:var(--muted);font-weight:600}
+.tagline{font-style:italic;margin-top:12px;color:#f6f2e9;opacity:0.95}
+.buttons{display:flex;gap:16px;margin-top:22px;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-block;padding:12px 22px;border-radius:30px;text-decoration:none;font-weight:700;box-shadow:0 10px 30px rgba(0,0,0,0.45)}
+.btn.primary{background:linear-gradient(90deg,#f1c40f,#d4a84a);color:#07110a}
+.btn.dark{background:#0b0b0b;border:2px solid rgba(255,255,255,0.06);color:#fff}
+.site-footer{position:fixed;left:0;right:0;bottom:8px;text-align:center;color:rgba(255,255,255,0.4);font-size:13px}
+
+/* Soft glow around logo */
+.logo{box-shadow:0 10px 60px rgba(212,168,74,0.12), 0 6px 22px rgba(0,0,0,0.6);}
+
+@media (min-width:1200px){
+  .logo{width:420px}
+  .title{font-size:56px}
+}
+
+@media (max-width:420px){
+  .logo{width:220px}
+  .title{font-size:22px}
+}
