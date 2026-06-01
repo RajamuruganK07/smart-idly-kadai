@@ -67,6 +67,8 @@ To link the mock streams to real Firebase:
    ```
 git clone https://github.com/RajamuruganK07/smart-idly-kadai.git,
 
+$env:Path += ";C:\Users\ACER\sdk\flutter\bin",
+
 cd smart-idly-kadai,
 
 flutter pub get,
